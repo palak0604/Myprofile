@@ -77,13 +77,13 @@
     <section class="specialties" id="specialties">
       <div class="container">
         <div class="heading text-center">
-          <h2 id="content">My Skills</h2>
-          <h3 id="content"> Wisdom is Knowing what to do next, Skill is knowing how to do it and Virtue is doing it.My skill section may not be too long but 
+          <h2 id="content1">My Skills</h2>
+          <h3 id="content1"> Wisdom is Knowing what to do next, Skill is knowing how to do it and Virtue is doing it.My skill section may not be too long but 
 		I am proficient coder, web designer well versed with adobe photoshop. Also a Charismatic and confident public speaker. Good at other 
 		technical computer subjects that includes DBMS</h3>
 		<br>
 		<div>
-                <input onclick='speak();' type='button' value='🔊 Play' />
+                <input onclick='speak1();' type='button' value='🔊 Play' />
             </div>
         </div>
       </div>
@@ -144,7 +144,7 @@
         </div>
       </div>
 	    </br></br>
-      <div class="container" id="content">
+      <div class="container" >
         <div class="row">
           <div class="col-md-6">
             <div class="skills">
@@ -152,38 +152,32 @@
               <div class="restitem clearfix">
                 <div class="rm-thumb" style="background-image: url(img/html.png)">
                 </div>
-                <h5 id="content">HTML</h5>
-                <p id="content">I am good at HTML5. HTML5  is the latest standard of HyperText Markup Language (HTML) used to describe the structure of web pages on the Internet. 
+                <h5 >HTML</h5>
+                <p >I am good at HTML5. HTML5  is the latest standard of HyperText Markup Language (HTML) used to describe the structure of web pages on the Internet. 
 	          If CSS gives you style and JavaScript gives you interactivity, HTML can be considered the backbone that 
 	          holds it all together.
                 </p>
 		      <br>
-		 <div>
-                <input onclick='speak();' type='button' value='🔊 Play' />
-            </div>
+		 
               </div>
               <div class="restitem clearfix">
                 <div class="rm-thumb" style="background-image: url(img/css.png)">
                 </div>
-                <h5 id="content">CSS</h5>
-                <p id="content">I can readily make use of css for styling.CSS stands for Cascading Style Sheets, and it’s the language of choice for determining the visual layout and presentation of a webpage. 
+                <h5 >CSS</h5>
+                <p >I can readily make use of css for styling.CSS stands for Cascading Style Sheets, and it’s the language of choice for determining the visual layout and presentation of a webpage. 
 		 CSS (responsible for style) is one of the big three core components of the web for styling .
                 </p>
 		      <br>
-		<div>
-                <input onclick='speak();' type='button' value='🔊 Play' />
-            </div>
+		
               </div>
               <div class="restitem clearfix">
                 <div class="rm-thumb" style="background-image: url(img/php.png)">
                 </div>
-                <h5 id="content">PHP</h5>
-                <p id="content"> PHP is one of the most admired and popular server side scripting languages which are widely used for creating websites. With faster turn-around time
+                <h5 >PHP</h5>
+                <p > PHP is one of the most admired and popular server side scripting languages which are widely used for creating websites. With faster turn-around time
 		PHP has become preferred choice of the website developers.
                 </p><br>
-		      <div>
-                <input onclick='speak();' type='button' value='🔊 Play' />
-            </div>
+		      
               </div>
             </div>
           </div>
@@ -194,24 +188,19 @@
               <div class="restitem clearfix">
                 <div class="rm-thumb" style="background-image: url(img/java.png)">
                 </div>
-                <h5 id="content">JAVA</h5>
-                <p id="content">I can do bit java competitive coding but there are many places where Java is used in real world, starting from commercial e-commerce website to android apps, from scientific application to financial applications 
+                <h5 >JAVA</h5>
+                <p >I can do bit java competitive coding but there are many places where Java is used in real world, starting from commercial e-commerce website to android apps, from scientific application to financial applications 
 		, from games like Minecraft to desktop applications like Eclipse etc
                 </p>
-		      <div>
-                <input onclick='speak();' type='button' value='🔊 Play' />
-            </div>
+		      
               </div>
               <div class="restitem clearfix">
                 <div class="rm-thumb" style="background-image: url(img/PLSQL.png)">
                 </div>
-                <h5 id="content">PL/SQL</h5>
-                <p id="content">I am good at plsql codes.PL/SQL is a block structured language. The programs of PL/SQL are logical blocks that can contain any number of nested sub-blocks. Pl/SQL stands for "Procedural Language extension of SQL" that is used in Oracle.
+                <h5 >PL/SQL</h5>
+                <p >I am good at plsql codes.PL/SQL is a block structured language. The programs of PL/SQL are logical blocks that can contain any number of nested sub-blocks. Pl/SQL stands for "Procedural Language extension of SQL" that is used in Oracle.
                 </p>
-		      <div>
-                <input onclick='speak();' type='button' value='🔊 Play' />
-            </div>
-              </div>
+		      
               <div class="restitem clearfix">
                 <div class="rm-thumb" style="background-image: url(img/LINUX-LOGO.png)">
                 </div>
@@ -222,10 +211,7 @@
             </div>
           </div>
         </div>
-	      <br>
-	      <div>
-                <input onclick='speak();' type='button' value='🔊 Play' />
-            </div>
+	      
       </div>
     </section>
 
@@ -467,10 +453,16 @@
   </script>
   <script src="contactform/contactform.js"></script>
   <script>
-    function speak() {
+     function speak() {
         var element = document.getElementById("content");
         var text = element.innerHTML;
         element.style.color = "red";
+        responsiveVoice.speak(text);
+    }
+	  function speak1() {
+        var element = document.getElementById("content1");
+        var text = element.innerHTML;
+        element.style.color = "blue";
         responsiveVoice.speak(text);
     }
     </script>
